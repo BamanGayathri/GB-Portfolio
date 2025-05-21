@@ -1,0 +1,1138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GB</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Add this right after the opening body tag -->
+    <canvas id="waveCanvas"></canvas>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+
+    <!-- Loading Bar -->
+    <div class="loading-bar"></div>
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress"></div>
+
+    <!-- Navigation -->
+    <div class="nav-container">
+      <nav>
+        <div class="nav-links">
+          <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <div class="mobile-certifications">
+            <div class="certification-badge">
+              <img
+                src="asset/images/awssolarchi.webp"
+                alt="AWS Certified Developer Associate"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="mobile-menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+      </div>
+      <div class="shooting-star"></div>
+      <div class="shooting-star"></div>
+      <div class="shooting-star"></div>
+      <div class="shooting-star"></div>
+      <div class="shooting-star"></div>
+
+      <!-- Add background stars -->
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+
+      <div class="certifications">
+        <div class="certification-badges">
+          <a
+            href="#"
+            onclick="downloadaws()"
+            class="certification-badge"
+            title="AWS Certified Developer"
+          >
+            <img src="asset/images/awssolarchi.webp" alt="AWS Certification" />
+            <span class="certification-title">AWS Certified Developer</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="command-prompt" style="margin-top: 25px;">
+            <h5 class="text-gradient" >Hi, my name is</h5>
+          </div>
+          <h1 class="hero-title">
+            Gayathri <span class="text-gradient">Baman</span>
+          </h1>
+          <h2 class="hero-subtitle">Software Developer Engineer</h2>
+          <p class="hero-description">
+            Enthusiastic and innovative software engineer with 2+ years of experience in full-stack development, modern languages. Adept at creating scalable, fault-tolerant solutions for dynamic environments. Ability to optimize code, enhance system performance, and articulate with cross-functional teams in an agile environment.
+          </p>
+          <div class="hero-cta-group">
+            <button class="download-button" onclick="downloadResume()">
+              Download Resume
+            </button>
+          </div>
+          <div class="socials">
+            <div class="line"></div>
+            <a
+              href="https://github.com/BamanGayathri"
+              class="social-link"
+              target="_blank"
+            >
+              <i class="ri-github-fill"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/gayathri-baman-435713169/"
+              class="social-link"
+              target="_blank"
+            >
+              <i class="ri-linkedin-fill"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <div class="image-wrapper">
+            <img src="asset/images/gayathribaman.jpeg" alt="Gayathri Baman" />
+          </div>
+          <div class="image-shapes">
+            <div class="img-shape img-shape-1"></div>
+            <div class="img-shape img-shape-2"></div>
+            <div class="img-shape img-shape-3"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="section-breaker">
+      <div class="constellation">
+        <div class="star-point"></div>
+        <div class="star-point"></div>
+        <div class="star-point"></div>
+        <div class="constellation-line"></div>
+      </div>
+      <div class="center-emblem"></div>
+      <div class="cosmic-dust"></div>
+      <div class="cosmic-dust"></div>
+      <div class="cosmic-dust"></div>
+      <div class="cosmic-dust"></div>
+      <div class="cosmic-dust"></div>
+    </div>
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+        <div class="container">
+          <div class="skills-header">
+            <h2 class="portfolio-title">My Skills</h2>
+            <p class="skills-subtitle">
+              A comprehensive showcase of my technical expertise and tools I work with
+            </p>
+          </div>
+          <div class="skills-grid">
+            <!-- Programming Languages -->
+            <div class="skill-category" style="--delay: 0">
+              <div class="category-header">
+                <i class="ri-code-line category-icon" style="color: #fec86a; text-shadow: 0 0 10px #fec86a; animation: glow 1.5s ease-in-out infinite alternate;"></i>
+                <h3 class="category-title" style="color: #fec86a; text-shadow: 0 0 10px #fec86a; animation: glow 1.5s ease-in-out infinite alternate;">Languages</h3>
+              </div>
+              <div class="skills-list">
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">Go</span>
+                    <span class="skill-level">Expert</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 0.9"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">Java 17</span>
+                    <span class="skill-level">Advanced</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 0.8"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">Python 3</span>
+                    <span class="skill-level">Expert</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 0.95"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">JavaScript/TypeScript</span>
+                    <span class="skill-level">Expert</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 0.95"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">SQL</span>
+                    <span class="skill-level">Advanced</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 0.9"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">Shell/Bash</span>
+                    <span class="skill-level">Advanced</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 0.85"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">HTML5/CSS3</span>
+                    <span class="skill-level">Expert</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 1.0"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Frontend -->
+            <div class="skill-category" style="--delay: 1">
+              <div class="category-header">
+                <i class="ri-layout-4-line category-icon" style="color: #fec86a; text-shadow: 0 0 10px #fec86a; animation: glow 1.5s ease-in-out infinite alternate;"></i>
+                <h3 class="category-title" style="color: #fec86a; text-shadow: 0 0 10px #fec86a; animation: glow 1.5s ease-in-out infinite alternate;">Frontend</h3>
+              </div>
+              <div class="skills-list">
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">React / Next.js</span>
+                    <span class="skill-level">Advanced</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 0.85"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">React Native</span>
+                    <span class="skill-level">Advanced</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 0.85"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">ES2023</span>
+                    <span class="skill-level">Intermediate</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 0.7"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">Redux / Zustand</span>
+                    <span class="skill-level">Intermediate</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 0.7"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">Tailwind CSS</span>
+                    <span class="skill-level">Advanced</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 0.9"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">Jest & Web Vitals</span>
+                    <span class="skill-level">Intermediate</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 0.7"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Backend -->
+            <div class="skill-category" style="--delay: 2">
+              <div class="category-header">
+                <i class="ri-server-line category-icon" style="color: #fec86a; text-shadow: 0 0 10px #fec86a; animation: glow 1.5s ease-in-out infinite alternate;"></i>
+                <h3 class="category-title" style="color: #fec86a; text-shadow: 0 0 10px #fec86a; animation: glow 1.5s ease-in-out infinite alternate;">Backend</h3>
+              </div>
+              <div class="skills-list">
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">Spring Boot</span>
+                    <span class="skill-level">Advanced</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 0.85"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">FastAPI / Flask</span>
+                    <span class="skill-level">Expert</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 0.95"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">Node.js / Express</span>
+                    <span class="skill-level">Advanced</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 0.8"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">GraphQL / REST / gRPC</span>
+                    <span class="skill-level">Advanced</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 0.95"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">Kafka</span>
+                    <span class="skill-level">Intermediate</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 0.7"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">OpenAPI</span>
+                    <span class="skill-level">Intermediate</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 0.7"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">Web3.js</span>
+                    <span class="skill-level">Intermediate</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 0.7"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Cloud & DevOps -->
+            <div class="skill-category" style="--delay: 3">
+              <div class="category-header">
+                <i class="ri-cloud-line category-icon" style="color: #fec86a; text-shadow: 0 0 10px #fec86a; animation: glow 1.5s ease-in-out infinite alternate;"></i>
+                <h3 class="category-title" style="color: #fec86a; text-shadow: 0 0 10px #fec86a; animation: glow 1.5s ease-in-out infinite alternate;">Cloud & DevOps</h3>
+              </div>
+              <div class="skills-list">
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">AWS (EKS, EC2, Lambda, S3, DynamoDB)</span>
+                    <span class="skill-level">Expert</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 0.95"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">GCP (GKE, Cloud Run, Pub/Sub)</span>
+                    <span class="skill-level">Advanced</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 0.85"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">Docker & Kubernetes</span>
+                    <span class="skill-level">Advanced</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 0.85"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">Terraform & Helm</span>
+                    <span class="skill-level">Advanced</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 0.8"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">CI/CD (GitHub Actions, Cloud Build)</span>
+                    <span class="skill-level">Advanced</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 0.9"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">Blue-green & Canary Deploys</span>
+                    <span class="skill-level">Advanced</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 0.85"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">Prometheus & Grafana</span>
+                    <span class="skill-level">Advanced</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 0.85"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">OpenTelemetry</span>
+                    <span class="skill-level">Advanced</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 0.85"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Database & Caching -->
+            <div class="skill-category" style="--delay: 4">
+              <div class="category-header">
+                <i class="ri-database-2-line category-icon" style="color: #fec86a; text-shadow: 0 0 10px #fec86a; animation: glow 1.5s ease-in-out infinite alternate;"></i>
+                <h3 class="category-title" style="color: #fec86a; text-shadow: 0 0 10px #fec86a; animation: glow 1.5s ease-in-out infinite alternate;">Database & Caching</h3>
+              </div>
+              <div class="skills-list">
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">PostgreSQL & MySQL</span>
+                    <span class="skill-level">Expert</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 0.95"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">DynamoDB & MongoDB Atlas</span>
+                    <span class="skill-level">Advanced</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 0.95"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">Redis & ElastiCache</span>
+                    <span class="skill-level">Intermediate</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 0.7"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">S3 & Parquet Data Lakes</span>
+                    <span class="skill-level">Intermediate</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 0.7"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Testing & Quality -->
+            <div class="skill-category" style="--delay: 5">
+              <div class="category-header">
+                <i class="ri-test-tube-line category-icon" style="color: #fec86a; text-shadow: 0 0 10px #fec86a; animation: glow 1.5s ease-in-out infinite alternate;"></i>
+                <h3 class="category-title" style="color: #fec86a; text-shadow: 0 0 10px #fec86a; animation: glow 1.5s ease-in-out infinite alternate;">Testing & QA</h3>
+              </div>
+              <div class="skills-list">
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">TDD/BDD</span>
+                    <span class="skill-level">Advanced</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 0.9"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">JUnit & PyTest</span>
+                    <span class="skill-level">Advanced</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 0.85"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">SonarQube</span>
+                    <span class="skill-level">Intermediate</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 0.7"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">k6 Load Testing</span>
+                    <span class="skill-level">Intermediate</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 0.7"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Security & Privacy -->
+            <div class="skill-category" style="--delay: 6">
+              <div class="category-header">
+                <i class="ri-shield-check-line category-icon" style="color: #fec86a; text-shadow: 0 0 10px #fec86a; animation: glow 1.5s ease-in-out infinite alternate;"></i>
+                <h3 class="category-title" style="color: #fec86a; text-shadow: 0 0 10px #fec86a; animation: glow 1.5s ease-in-out infinite alternate;">Security & Privacy</h3>
+              </div>
+              <div class="skills-list">
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">JWT & OAuth 2.0/OIDC</span>
+                    <span class="skill-level">Advanced</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 0.85"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">AWS KMS & Vault</span>
+                    <span class="skill-level">Advanced</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 0.85"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                      <span class="skill-name">HashiCorp Vault</span>
+                      <span class="skill-level">Advanced</span>
+                    </div>
+                    <div class="skill-bar">
+                      <div class="skill-progress" style="--progress: 0.85"></div>
+                    </div>
+                  </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">AWS Cognito</span>
+                    <span class="skill-level">Advanced</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 0.9"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <!-- Data & ML -->
+            <div class="skill-category" style="--delay: 7">
+              <div class="category-header">
+                <i class="ri-bar-chart-line category-icon" style="color: #fec86a; text-shadow: 0 0 10px #fec86a; animation: glow 1.5s ease-in-out infinite alternate;"></i>
+                <h3 class="category-title" style="color: #edca8e; text-shadow: 0 0 10px #fec86a; animation: glow 1.5s ease-in-out infinite alternate;">Data & ML</h3>
+              </div>
+              <div class="skills-list">
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">Pandas & NumPy</span>
+                    <span class="skill-level">Advanced</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 0.95"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">Vertex AI & OpenAI API</span>
+                    <span class="skill-level">Intermediate</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 0.7"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">Google ADK & Agentic AI</span>
+                    <span class="skill-level">Intermediate</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 0.7"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">RAG & ReAct</span>
+                    <span class="skill-level">Intermediate</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="--progress: 0.7"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- Section Breaker -->
+  <div class="section-breaker">
+    <div class="constellation">
+      <div class="star-point"></div>
+      <div class="star-point"></div>
+      <div class="star-point"></div>
+      <div class="constellation-line"></div>
+    </div>
+    <div class="center-emblem"></div>
+    <div class="cosmic-dust"></div>
+    <div class="cosmic-dust"></div>
+    <div class="cosmic-dust"></div>
+    <div class="cosmic-dust"></div>
+    <div class="cosmic-dust"></div>
+  </div>
+
+  <!-- Skills Section -->
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+      <!-- Add shooting stars -->
+      <div class="shooting-star"></div>
+      <div class="shooting-star"></div>
+      <div class="shooting-star"></div>
+      <div class="shooting-star"></div>
+      <div class="shooting-star"></div>
+
+      <!-- Add background stars -->
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="container">
+        <div class="portfolio-header">
+          <h2 class="portfolio-title">Featured Projects</h2>
+          <p class="portfolio-subtitle">
+            Innovative solutions I've crafted with code
+          </p>
+        </div>
+
+        <div class="portfolio-grid">
+            <article class="portfolio-card">
+                <div class="project-category" style="color: #c4b294; text-shadow: 0 0 10px #fec86a; animation: glow 1.5s ease-in-out infinite alternate;">RTOS with ROS2</div>
+                <h3 class="project-title" style="color: #fec86a; text-shadow: 0 0 10px #fec86a; animation: glow 1.5s ease-in-out infinite alternate;">Real-Time Human Detection with ROS 2 and YOLOv8</h3>
+                
+                <p class="project-description">
+                  This project showcases a real-time human detection system using a webcam and YOLOv8 object detection:
+                    A live camera feed is processed in real time. When a person is detected, the system:
+                    Displays bounding boxes and labels on the video feed. Logs a bold and red alert message in the terminal, warning the user of the detection.                  
+                </p>
+                <div class="tech-stack">
+                  <span class="tech-item">Python</span>
+                  <span class="tech-item">OpenCV</span>
+                  <span class="tech-item">YOLOv8</span>
+                  <span class="tech-item">Robot Operating System 2</span>
+     
+                  
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/BamanGayathri/Real-Time-Video-Anomaly-Detection" class="project-link" style="background-color: #fec86a; color: #34353b; border-radius: 12px; padding: 6px 12px; transition: all 0.3s ease; display: inline-flex; align-items: center; margin-right: 10px; text-decoration: none; box-shadow: 0 0 10px rgba(254, 200, 106, 0.3); font-size: 0.9rem;">
+                      <i class="ri-external-link-line" style="margin-right: 3px;"></i>
+                      <span>View Project</span>
+                    </a>
+                  </div>
+                
+              </article>
+          <!-- Portfolio Website -->
+          <article class="portfolio-card">
+            <div class="project-category" style="color: #c4b294; text-shadow: 0 0 10px #fec86a; animation: glow 1.5s ease-in-out infinite alternate;">Enhanced Solar Power Prediction</div>
+            <h3 class="project-title" style="color: #fec86a; text-shadow: 0 0 10px #fec86a; animation: glow 1.5s ease-in-out infinite alternate;">Solar-Net</h3>
+            <p class="project-description">
+              This work shows how to build a scalable and robust solution based on a transformer architecture integrated with big data tools within the Hadoop ecosystem such as Apache Hive, Spark MLlib, and HDFS. The model shows promising results in terms of accuracy and predictive capacity when compared to traditional approaches, thereby proving to be a great fit for solar power prediction at scale.           
+            </p>
+            <div class="tech-stack">
+              <span class="tech-item">Data Processing</span>
+              <span class="tech-item">Seaborn</span>
+              <span class="tech-item">SVR</span>
+              <span class="tech-item">Random Forest</span>
+              <span class="tech-item">Google Collab</span>
+              <span class="tech-item">LLM's</span>
+              <span class="tech-item">Python</span>
+              <span class="tech-item">LSTM</span>
+              <span class="tech-item">GBM</span>
+              <span class="tech-item">Solar-Net Model</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/BamanGayathri/Solar-Net" class="project-link" style="background-color: #fec86a; color: #34353b; border-radius: 12px; padding: 6px 12px; transition: all 0.3s ease; display: inline-flex; align-items: center; margin-right: 10px; text-decoration: none; box-shadow: 0 0 10px rgba(254, 200, 106, 0.3); font-size: 0.9rem;">
+                <i class="ri-external-link-line" style="margin-right: 3px;"></i>
+                <span>View Project</span>
+              </a>
+            </div>
+           
+          </article>
+
+          <!-- DEX Platform -->
+          <article class="portfolio-card">
+                <div class="project-category" style="color: #c4b294; text-shadow: 0 0 10px #fec86a; animation: glow 1.5s ease-in-out infinite alternate;">Data Visualization</div>
+                <h3 class="project-title" style="color: #fec86a; text-shadow: 0 0 10px #fec86a; animation: glow 1.5s ease-in-out infinite alternate;">Analysis-of-Public-Chess-Game</h3>
+            <p class="project-description">
+              Analysis of public chess games using the dataset from Lichess.org, one of the leading online chess platforms. The research survey covers the player behavior and game outcomes for pattern derivation to draw inferences on strategic decision-making in chess.The study follows a structured approach: hypothesis testing, visualization techniques, and ethical considerations that provide comprehensive insight into public chess gameplay.
+            </p>
+            <div class="tech-stack">
+              <span class="tech-item">D3.js</span>
+              <span class="tech-item">Javascript</span>
+              <span class="tech-item">Power BI</span>
+              <span class="tech-item">Tableau</span>
+              <span class="tech-item">Python</span>
+              <span class="tech-item">Google Collab</span>
+              <span class="tech-item">Truffle</span>
+              <span class="tech-item">Liches.org</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/BamanGayathri/Analysis-of-Public-Chess-Game" class="project-link" style="background-color: #fec86a; color: #34353b; border-radius: 12px; padding: 6px 12px; transition: all 0.3s ease; display: inline-flex; align-items: center; margin-right: 10px; text-decoration: none; box-shadow: 0 0 10px rgba(254, 200, 106, 0.3); font-size: 0.9rem;">
+                <i class="ri-external-link-line" style="margin-right: 3px;"></i>
+                <span>View Project</span>
+              </a>
+            </div>
+            
+          </article>
+
+          
+          <!-- Cloud Infrastructure -->
+          <article class="portfolio-card">
+            <div class="project-category" style="color: #c4b294; text-shadow: 0 0 10px #fec86a; animation: glow 1.5s ease-in-out infinite alternate;">Automation & Scraping</div>
+            <h3 class="project-title" style="color: #fec86a; text-shadow: 0 0 10px #fec86a; animation: glow 1.5s ease-in-out infinite alternate;">Recipe Scraper</h3>
+            <p class="project-description">
+                Built a Python-powered recipe scraper that crawled and parsed over 220,000 recipes from diverse cooking sites. It leverages asyncio and aiohttp for high-speed concurrent fetching, BeautifulSoup for robust HTML parsing, and SQLite for structured storage. Intelligent retry logic, rate-limiting, user-agent rotation, and detailed logging ensure uninterrupted, scalable scraping.
+            </p>
+            <div class="tech-stack">
+              <span class="tech-item">Selenium</span>
+              <span class="tech-item">BeautifulSoup</span>
+              <span class="tech-item">Pandas</span>
+              <span class="tech-item">Python</span>
+              <span class="tech-item">Scrapy</span>
+              <span class="tech-item">ChromeDriver</span>
+              <span class="tech-item">Flask</span>
+              <span class="tech-item">PostgreSQL</span>
+
+              
+            </div>
+            <div class="project-links">
+                <a href="#" class="project-link" style="background-color: #fec86a; color: #34353b; border-radius: 12px; padding: 6px 12px; transition: all 0.3s ease; display: inline-flex; align-items: center; margin-right: 10px; text-decoration: none; box-shadow: 0 0 10px rgba(254, 200, 106, 0.3); font-size: 0.9rem;">
+                  <i class="ri-external-link-line" style="margin-right: 3px;"></i>
+                  <span>View Project</span>
+                </a>
+              </div>
+            
+          </article>
+
+
+          <!-- Cloud Infrastructure -->
+          <article class="portfolio-card">
+            <div class="project-category" style="color: #c4b294; text-shadow: 0 0 10px #fec86a; animation: glow 1.5s ease-in-out infinite alternate;">Portfolio Website</div>
+            <h3 class="project-title" style="color: #fec86a; text-shadow: 0 0 10px #fec86a; animation: glow 1.5s ease-in-out infinite alternate;">Personal Portfolio</h3>
+            <p class="project-description">
+                A modern, responsive portfolio website built with HTML, CSS, and JavaScript featuring smooth animations. It includes filterable project galleries, case-study modals, and embedded PDF resume viewing. Mobile-first design delivers optimal UX across devices, using CSS Grid, Flexbox, and performant components. It also uses lazy-loading and optimized assets for fast page loads. SEO.!
+            </p>
+            <div class="tech-stack">
+              <span class="tech-item">HTML</span>
+              <span class="tech-item">React</span>
+              <span class="tech-item">CSS</span>
+              <span class="tech-item">JS</span>
+              <span class="tech-item">MySQL</span>
+              <span class="tech-item">GitHub Pages</span>
+
+              
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/gowtham012/Portfolio-main" class="project-link" style="background-color: #fec86a; color: #34353b; border-radius: 12px; padding: 6px 12px; transition: all 0.3s ease; display: inline-flex; align-items: center; margin-right: 10px; text-decoration: none; box-shadow: 0 0 10px rgba(254, 200, 106, 0.3); font-size: 0.9rem;">
+                  <i class="ri-external-link-line" style="margin-right: 3px;"></i>
+                  <span>View Project</span>
+                </a>
+              </div>
+            
+          </article>
+        </div>
+
+        <div class="scroll-indicator">
+          <div class="scroll-dot active"></div>
+          <div class="scroll-dot"></div>
+          <div class="scroll-dot"></div>
+        </div>
+      </div>
+    </section>
+    <div class="section-breaker">
+      <div class="constellation">
+        <div class="star-point"></div>
+        <div class="star-point"></div>
+        <div class="star-point"></div>
+        <div class="constellation-line"></div>
+      </div>
+      <div class="center-emblem"></div>
+      <div class="cosmic-dust"></div>
+      <div class="cosmic-dust"></div>
+      <div class="cosmic-dust"></div>
+      <div class="cosmic-dust"></div>
+      <div class="cosmic-dust"></div>
+    </div>
+    <!-- Experience Section -->
+    <section id="experience" class="experience section">
+      <div class="container">
+        <div class="experience-header">
+          <h2 class="portfolio-title">Experience</h2>
+          <p class="portfolio-subtitle">
+            Showcasing my growth and impact in software engineering
+          </p>
+        </div>
+
+        <div class="experience-timeline">
+          <div class="timeline-line"></div>
+
+          <!-- Software Developer -->
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <span class="timeline-date">April 2021 - July 2023</span>
+              <h3 class="timeline-title" style="color: #fec86a; text-shadow: 0 0 10px #fec86a; animation: glow 1.5s ease-in-out infinite alternate;">Software Developer</h3>
+              <h4 class="timeline-subtitle" style="color: #c4b294; text-shadow: 0 0 10px #fec86a; animation: glow 1.5s ease-in-out infinite alternate;">ABJAYON</h4>
+              <p class="timeline-description">
+                Enhanced product performance by using Elasticsearch & AWS, boosting search results by 35% and cutting downtime by 20%.
+              </p>
+              <div class="timeline-tags">
+                <span class="timeline-tag">AWS</span>
+                <span class="timeline-tag">React Native</span>
+                <span class="timeline-tag">React</span>
+                <span class="timeline-tag">Mysql</span>
+                <span class="timeline-tag">Python</span>
+                <span class="timeline-tag">Oracle c2c/c2m</span>
+                <span class="timeline-tag">Node.Js</span>
+                <span class="timeline-tag">Graphql</span>
+                <span class="timeline-tag">RestAPI</span>
+                <span class="timeline-tag">Postman</span>
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <span class="timeline-date">June 2019 - July 2019</span>
+              <h3 class="timeline-title" style="color: #fec86a; text-shadow: 0 0 10px #fec86a; animation: glow 1.5s ease-in-out infinite alternate;">Machine Learning Intern</h3>
+              <h4 class="timeline-subtitle" style="color: #c4b294; text-shadow: 0 0 10px #fec86a; animation: glow 1.5s ease-in-out infinite alternate;">The International Institute of Information & Technology Hyderabad</h4>
+              <p class="timeline-description">
+                Using support vector machines and the random forest algorithm, the study evaluated the probability of chickpea extinction by 2070 and found a 30% decrease in sustainability to guide agricultural actions.
+              </p>
+              <div class="timeline-tags">
+                <span class="timeline-tag">Python</span>
+                <span class="timeline-tag">climat 2070</span>
+                <span class="timeline-tag">SVM</span>
+                <span class="timeline-tag">Random Forest</span>
+                <span class="timeline-tag">Mysql</span>
+                <span class="timeline-tag">Machine lEarning algorithms</span>
+                <span class="timeline-tag">Pandas</span>
+                <span class="timeline-tag">Lambda</span>
+                <span class="timeline-tag">GitHub Actions</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="section-breaker">
+      <div class="constellation">
+        <div class="star-point"></div>
+        <div class="star-point"></div>
+        <div class="star-point"></div>
+        <div class="constellation-line"></div>
+      </div>
+      <div class="center-emblem"></div>
+      <div class="cosmic-dust"></div>
+      <div class="cosmic-dust"></div>
+      <div class="cosmic-dust"></div>
+      <div class="cosmic-dust"></div>
+      <div class="cosmic-dust"></div>
+    </div>
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="shooting-star"></div>
+      <div class="shooting-star"></div>
+      <div class="shooting-star"></div>
+      <div class="shooting-star"></div>
+      <div class="shooting-star"></div>
+
+      <!-- Add background stars -->
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="container">
+        <div class="contact-header">
+          <h2 class="portfolio-title">Get In Touch</h2>
+          <p class="contact-subtitle">Let's collaborate on your next project</p>
+        </div>
+
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="info-item">
+              <i class="ri-mail-line info-icon"></i>
+              <div class="info-details">
+                <h3>Email</h3>
+                <a href="mailto:bgayathribaman@gmail.com">bgayathribaman@gmail.com</a>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="ri-map-pin-line info-icon"></i>
+              <div class="info-details">
+                <h3>Location</h3>
+                <p>Seattle, WA</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="ri-github-line info-icon"></i>
+              <div class="info-details">
+                <h3>GitHub</h3>
+                
+                <a href="https://github.com/BamanGayathri"
+                  >https://github.com/BamanGayathri</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contact-form" action="https://formsubmit.co/bgayathribaman@gmail.com" method="POST" onsubmit="showThankYouMessage(event)">
+            <input type="hidden" name="_next" value="https://gowtham012.github.io/Portfolio/">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_subject" value="New Contact Form Submission">
+            <input type="hidden" name="_autoresponse" value="Thank you for your message! I will get back to you soon.">
+            <div class="form-group">
+              <input type="text" name="name" placeholder="Your Name" required />
+              <div class="error-message" id="name-error" style="display: none; color: #ff4444; margin-top: 5px;">
+                <i class="ri-error-warning-fill" style="color: #ff4444;"></i> Please enter your name
+              </div>
+            </div>
+            <div class="form-group">
+              <input
+                type="email" 
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <div class="error-message" id="email-error" style="display: none; color: #ff4444; margin-top: 5px;">
+                <i class="ri-error-warning-fill" style="color: #ff4444;"></i> Please enter your email
+              </div>
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                name="subject" 
+                placeholder="Subject"
+                required
+              />
+              <div class="error-message" id="subject-error" style="display: none; color: #ff4444; margin-top: 5px;">
+                <i class="ri-error-warning-fill" style="color: #ff4444;"></i> Please enter a subject
+              </div>
+            </div>
+            <div class="form-group">
+              <textarea
+                name="message"
+                placeholder="Your Message"
+                required
+              ></textarea>
+              <div class="error-message" id="message-error" style="display: none; color: #ff4444; margin-top: 5px;">
+                <i class="ri-error-warning-fill" style="color: #ff4444;"></i> Please enter your message
+              </div>
+            </div>
+            <button type="submit" class="submit-btn" onclick="showThankYouMessage(event)" style="position: relative; overflow: hidden; transition: all 0.3s ease; background: var(--primary); color: rgb(0, 0, 0); border: none; padding: 12px 24px; border-radius: 6px; cursor: pointer; display: flex; align-items: center; gap: 8px;" onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 0 15px var(--primary)'" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none'">
+              Send Message
+              <i class="ri-send-plane-line" style="transition: transform 0.3s ease;"></i>
+            </button>
+          </form>
+
+          <div id="thank-you-message" class="thank-you-message" style="display: none; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 10;">
+            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%;">
+              <h3 style="color: #fec86a; text-shadow: 0 0 10px #fec86a; animation: glow 1.5s ease-in-out infinite alternate;">
+                Thank you for your message!
+              </h3>
+              <p style="color: #c4b294; animation: fadeIn 1s ease-in;">
+                I'll get back to you soon.
+              </p>
+            </div>
+          </div>
+
+          <script>
+            function showThankYouMessage(event) {
+              event.preventDefault();
+              const form = document.getElementById('contact-form');
+              const thankYouMessage = document.getElementById('thank-you-message');
+              
+              // Check if all required fields are filled
+              const inputs = form.querySelectorAll('input[required], textarea[required]');
+              let isValid = true;
+              
+              inputs.forEach(input => {
+                const errorElement = document.getElementById(`${input.name}-error`);
+                if (!input.value.trim()) {
+                  isValid = false;
+                  input.style.borderColor = '#ff4444';
+                  errorElement.style.display = 'block';
+                  errorElement.style.animation = 'shake 0.5s ease-in-out';
+                } else {
+                  input.style.borderColor = '';
+                  errorElement.style.display = 'none';
+                }
+              });
+
+              if (!isValid) {
+                return;
+              }
+
+              // Submit the form data
+              const formData = new FormData(form);
+              fetch("https://formsubmit.co/ajax/bgayathribaman@gmail.com", {
+                method: "POST",
+                headers: { 
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify(Object.fromEntries(formData))
+              })
+              .then(response => response.json())
+              .then(data => {
+                form.style.display = 'none';
+                thankYouMessage.style.display = 'block';
+                form.reset();
+              })
+              .catch(error => console.log(error));
+            }
+          </script>
+
+          <style>
+            @keyframes shake {
+              0%, 100% { transform: translateX(0); }
+              25% { transform: translateX(-10px); }
+              75% { transform: translateX(10px); }
+            }
+            
+            .error-message {
+              display: flex;
+              align-items: center;
+              gap: 5px;
+              font-size: 0.9em;
+            }
+
+            .form-group input, .form-group textarea {
+              transition: border-color 0.3s ease;
+            }
+          </style>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
